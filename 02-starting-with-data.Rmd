@@ -426,7 +426,7 @@ head(sex)
 
 ### Using `stringsAsFactors=FALSE`
 
-By default, when building or importing a data frame, the columns that contain
+By default, when building a data frame with `data.frame()` or importing data with `read.csv()` (and friends), the columns that contain
 characters (i.e. text) are coerced (= converted) into factors. Depending on what you want to do with the data, you may want to keep these
 columns as `character`. To do so, `read.csv()` and `read.table()` have an
 argument called `stringsAsFactors` which can be set to `FALSE`.
